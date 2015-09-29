@@ -1,6 +1,6 @@
 body {
 padding-top: 70px;
-text-rendering: auto;
+text-rendering: optimizeLegibility;
 font-family: 'Roboto';
 }
 .fixed-bar {
@@ -42,32 +42,32 @@ font-family: 'Roboto';
 }
 
 .item {
-
   margin: 0 auto;
   margin-bottom: 1%;
   text-align: center;
   width: 31%;
   border:1px solid black;
 }
-.test {
-  border-radius: 50px; 
+.buttons {
+width: 50%;
+display: inline-block;
+}
+.done {
+ border-radius: 50px; 
  width: 40px; 
  height: 40px;
  border: 1px solid red;
  position: relative;
- margin-left: 425px;
- margin-top: -60px;
+float: right;
 text-align:center;
 }
 
-.test2 {
-  border-radius: 50px; 
+.delete {
+ border-radius: 50px; 
  width: 40px; 
  height: 40px;
  border: 1px solid red;
- position: relative;
- margin-left: 375px;
- margin-top: -40px;
+float: left;
 text-align:center;
 }
 
