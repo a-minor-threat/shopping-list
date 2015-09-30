@@ -1,5 +1,7 @@
 	$(document).ready(function(){
-		console.log("jQuery ready!")
+		console.log("jQuery ready!");
+		$(".buttons").hide();
+		$(".item").hide();
 		inputValue();		
 		deleteAction();
 		doneAction();
@@ -10,6 +12,8 @@
 		$(".input-form").keypress(function(event){
 			console.log("keys are being pressed");
 			var value = $(".input-form").val();
+				$(".buttons").slideDown("slow", "linear");
+				$(".item").slideDown("slow", "linear");			
 			if (event.which === 13) {
 				console.log("enter key has been pressed");
 				$(".item-name").text(value);
