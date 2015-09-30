@@ -1,0 +1,100 @@
+/** {
+    border: 3px solid orange;
+}*/
+
+/*
+@font-face {
+  font-family: 'Novito';
+  src: url('../fonts/NovitoNova-Thin.otf');
+}*/
+body {
+    padding-top: 70px;
+    text-rendering: optimizeLegibility;
+    font-family:'Shadows Into Light Two', cursive;
+}
+.fixed-bar {
+    font-size: 2em;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+/*
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;  
+*/
+}
+.fixed-bar p {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+.input-form {
+    border-radius: 50px;
+    border: 5px dotted lightgray;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1%;
+    outline: none;
+}
+
+.input-form:focus {
+    box-shadow: inset 0 0 3px 2px gray;
+}
+
+.center {
+    text-align: center;
+}
+.item {
+    margin: 0 auto;
+    margin-bottom: 1%;
+    text-align: center;
+    width: 30%;
+    border: 1px solid black;
+}
+.item .item-name {
+    margin: 0;
+    font-size: 2em;
+}
+.buttons {
+    width: 6.5%;
+    display: inline-block;
+    margin-top: -140px;
+    margin-bottom: 35px;
+    margin-left: 27%;
+}
+.done {
+    border-radius: 50px;
+    color: green;
+    font-size: 1.7em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid green;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+.done:hover{
+    box-shadow: inset 0 0 3px 2px green;    
+}
+.delete {
+    border-radius: 50px;
+    color: red;
+    font-size: 1.7em;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+.delete:hover{
+        box-shadow: inset 0 0 3px 2px red;
+}
