@@ -18,6 +18,7 @@
 				$(".buttons").fadeIn("slow");
 				$(".item").fadeIn("slow");					
 				$(".item-name").text(value);
+				$(".input-form").val('');
 			}
 		});
 	}
