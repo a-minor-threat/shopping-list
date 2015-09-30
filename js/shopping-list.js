@@ -1,23 +1,10 @@
 	$(document).ready(function(){
 		console.log("jQuery ready!")
+		inputValue();		
 		deleteAction();
 		doneAction();
-		inputValue();
+
 	});
-
-	function deleteAction () {
-		$(".delete").click(function(){
-			console.log("delete event fired.")
-			alert("Handler for the delete button called.");
-		});		
-	}
-
-	function doneAction() {
-		$(".done").click(function(){
-			console.log("done event fired.")
-			alert("Handler for the done button called.");
-		});		
-	}
 
 	function inputValue() {
 		$(".input-form").keypress(function(event){
@@ -27,6 +14,19 @@
 				console.log("enter key has been pressed");
 				$(".item-name").text(value);
 			}
-
 		});
+	}
+
+	function deleteAction () {
+		$(".delete").click(function(){
+			console.log("delete event fired.")
+			$(".item-name").remove();
+		});		
+	}
+
+	function doneAction() {
+		$(".done").click(function(){
+			console.log("done event fired.")
+			alert("Handler for the done button called.");
+		});		
 	}
