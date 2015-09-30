@@ -13,6 +13,7 @@ body {
     text-rendering: optimizeLegibility;
     font-family:'Shadows Into Light Two', cursive;
 }
+
 .fixed-bar {
     font-size: 2em;
     position: fixed;
@@ -31,12 +32,14 @@ body {
   box-shadow: 0 8px 6px -6px black;  
 */
 }
+
 .fixed-bar p {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
     color: black;
 }
+
 .input-form {
     font-size: 1.5em;
     border-radius: 50px;
@@ -54,6 +57,7 @@ body {
 .center {
     text-align: center;
 }
+
 .item {
     margin: 0 auto;
     margin-bottom: 1%;
@@ -61,10 +65,12 @@ body {
     width: 30%;
     border-bottom: 1px solid black;
 }
+
 .item .item-name {
     margin: 0;
     font-size: 2em;
 }
+
 .buttons {
     width: 6.5%;
     display: inline-block;
@@ -72,6 +78,7 @@ body {
     margin-bottom: 35px;
     margin-left: 27%;
 }
+
 .done {
     border-radius: 50px;
     border: 1px solid green;
@@ -99,7 +106,12 @@ body {
     text-align: center;
     vertical-align: middle;
 }
+
 .delete:hover{
     box-shadow: inset 0 0 3px 2px red;
 
+}
+
+.strike {
+    text-decoration: line-through;
 }

@@ -27,6 +27,6 @@
 	function doneAction() {
 		$(".done").click(function(){
 			console.log("done event fired.")
-			alert("Handler for the done button called.");
+			$(".item-name").toggleClass("strike");
 		});		
 	}
