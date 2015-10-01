@@ -27,6 +27,8 @@
 		$(".delete").click(function(){
 			console.log("delete event fired.")
 			$(".item-name").remove();
+			$(".buttons").fadeOut("slow");
+			$(".item").fadeOut("slow");
 		});		
 	}
 
