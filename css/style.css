@@ -112,6 +112,14 @@ body {
 
 }
 
+.list-items {
+  list-style-type: none;
+}
+
+.list-buttons {
+  list-style-type: none;
+}
+
 .strike {
     text-decoration: line-through;
 }
