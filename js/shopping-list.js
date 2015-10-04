@@ -8,9 +8,13 @@
  function addItem() {
 
      $("button").click(function() {
-     var value = $(".input-form").val();       
+     var value = $(".input-form").val();
+     if ($(".input-form").val().length === 0) {
+     	alert("Please enter something.")
+     }else {        
          $("ul").append('<li> <span class=\"item-name\">'+value+'</span><span class=\"done\"> done</span><span class=\"delete\"> delete</span></li>');
          $(".input-form").val('');
+     }
      });
  }
 
