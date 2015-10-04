@@ -1,41 +1,29 @@
-	$(document).ready(function() {
-		console.log("jQuery ready!");
-		$(".buttons").hide();
-		$(".item").hide();
-		inputValue();
-		deleteAction();
-		doneAction();
+ $(document).ready(function() {
 
-	});
+     addItem();
+     deleteAction();
+     doneAction();
+ });
 
-	function inputValue() {
-		$(".input-form").keypress(function(event) {
-			console.log("keys are being pressed");
-			var value = $(".input-form").val();
-			if (event.which === 13) {
-				console.log("enter key has been pressed");
-				$(".buttons").fadeIn("slow");
-				$(".item").fadeIn("slow");
-				$(".item-name").text(value);
-				$(".input-form").val('');
+ function addItem() {
 
-			}
+     $("button").click(function() {
+     var value = $(".input-form").val();       
+         $("ul").append('<li> <span class=\"item-name\">'+value+'</span><span class=\"done\"> done</span><span class=\"delete\"> delete</span></li>');
+         $(".input-form").val('');
+     });
+ }
 
-		});
-	}
+ function deleteAction() {
+     $(".ul-list").on("click", ".delete", function() {
+      //   alert("Delete event fired.");
+         $(this).closest("li").remove();
+     });
+ }
 
-	function deleteAction() {
-		$(".delete").click(function() {
-			console.log("delete event fired.")
-			$(".item-name").remove();
-			$(".buttons").fadeOut("slow");
-			$(".item").fadeOut("slow");
-		});
-	}
-
-	function doneAction() {
-		$(".done").click(function() {
-			console.log("done event fired.")
-			$(".item-name").toggleClass("strike");
-		});
-	}
+ function doneAction() {
+     $(".ul-list").on("click", ".done", function() {
+      //   alert("Done event fired.")
+         $(this).closest("li").toggleClass("strike");
+     });
+ }
